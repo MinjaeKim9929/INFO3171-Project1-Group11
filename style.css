@@ -54,3 +54,60 @@ table {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the image */
 	object-fit: cover; /* Ensures the image covers the container, maintaining aspect ratio */
 }
+
+#color-page {
+	font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+	margin: 0;
+	padding: 20px;
+}
+
+#color-page .theme {
+	margin-bottom: 40px;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+#color-page .dark {
+	background-color: #1c1c1c;
+	color: #ffffff;
+}
+
+#color-page .light {
+	background-color: #f4f4f4;
+	color: #333333;
+}
+
+#color-page .color-box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	border-radius: 8px;
+	position: relative;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#color-page .dark .color-box {
+	color: #1c1c1c; /* Dark theme text color for boxes */
+}
+
+#color-page .accent {
+	background-color: #ff6f20;
+}
+
+#color-page .highlight {
+	background-color: #ff9a00;
+}
+
+#color-page .bar-color {
+	margin-top: 20px;
+}
+
+#color-page h2,
+#color-page h3,
+#color-page h4 {
+	margin: 20px 0 10px;
+}
