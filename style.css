@@ -1,1 +1,56 @@
+/* 
+  Client Design Requests
+  1) All borders must be rounded. We are using 8px border radius
+  2) Dashboard colors should be monochromatic and has bright website color schemes
+  3)The chart may utilize some of the highlighted colors, but not an excessive amount
+  4) Simple and unambiguous design
+  5) Choose a color theme that goes well with our logo
+  6) Need to have hover effects on clickable or interactable elements
+  7) Easy to recognize Menu
+  8) Dashboard needs individual boxes with rounded edges
+  
+*/
 
+.outer-border {
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+}
+
+.inner-border {
+	border: 1px solid black;
+	margin: 5px;
+	width: calc(100% - 10px);
+	border-radius: 8px;
+}
+
+.form-control {
+	height: 45px;
+	border: none;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	text-align: center;
+}
+
+table {
+	border-radius: 8px;
+}
+
+.table-box {
+	border: 2px solid black;
+}
+
+.img {
+	width: 200px; /* Makes the image take up the full width of its container */
+	max-width: 200px; /* Limits the maximum width of the image */
+	height: auto; /* Keeps the image's aspect ratio intact */
+	border-radius: 8px; /* Rounds the corners of the image */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the image */
+	object-fit: cover; /* Ensures the image covers the container, maintaining aspect ratio */
+}
