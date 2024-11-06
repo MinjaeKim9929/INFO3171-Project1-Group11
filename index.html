@@ -339,6 +339,7 @@
 							</tbody>
 						</table>
 					</div>
+
 					<div
 						id="typography"
 						class="tab-pane col mb-4 p-3"
@@ -478,6 +479,7 @@
 							</section>
 						</main>
 					</div>
+
 					<div
 						id="data-visualization"
 						class="tab-pane col mb-4 p-3"
@@ -486,35 +488,95 @@
 						tabindex="0"
 					>
 						<h3>Data Visualization</h3>
-						<div class="lineGraph">
-							<h4>Line Graph</h4>
-							<h5>Normal</h5>
-							<h5>Stacked</h5>
+						<div class="sticky-nav">
+							<ul class="nav nav-pills">
+								<li class="nav-item dropdown">
+									<a
+										href="#"
+										class="nav-link dropdown-toggle"
+										data-bs-toggle="dropdown"
+										role="button"
+										aria-expanded="false"
+									>
+										Graphs & Charts
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#lineGraph" class="dropdown-item">Line Graph</a></li>
+										<li><a href="#barGraphStacked" class="dropdown-item">Bar Graph (Stacked)</a></li>
+										<li><a href="#areaChartStacked" class="dropdown-item">Area Chart (Stacked)</a></li>
+										<li><a href="#scatterPlot" class="dropdown-item">Scatter Plot</a></li>
+										<li><a href="#pieChart" class="dropdown-item">Pie Chart</a></li>
+										<li><a href="#donutChart" class="dropdown-item">Donut Chart</a></li>
+									</ul>
+								</li>
+							</ul>
 						</div>
-						<div class="barGraph">
-							<h4>Bar Graph</h4>
-							<h5>Normal</h5>
-							<h5>Stacked</h5>
-							<h5>Horizontal</h5>
-						</div>
-						<div class="singleValueChart">
-							<h4>Single Value Charts</h4>
-						</div>
-						<div class="areaChart">
-							<h4>Area Charts</h4>
-							<h5>Normal</h5>
-							<h5>Stacked</h5>
-						</div>
-						<div class="scatterPlot">
-							<h4>Scatter Plot</h4>
-						</div>
-						<div class="pieChart">
-							<h4>Pie Chart</h4>
-						</div>
-						<div class="donutChart">
-							<h4>Donut Chart</h4>
+
+						<div id="charts" class="d-flex flex-column justify-content-center align-items-md-center">
+							<!--Line graph-->
+							<div id="lineGraph">
+								<br /><br />
+								<h2>Line Graph</h2>
+								<br />
+								<div>
+									<script>
+										lineGraph();
+									</script>
+								</div>
+							</div>
+
+							<!--Bar Graph stacked-->
+							<div id="barGraphStacked">
+								<br /><br />
+								<h2>Bar Graph (stacked)</h2>
+								<br />
+								<script>
+									barGraph();
+								</script>
+							</div>
+
+							<!--Area Chart (stacked)-->
+							<div id="areaChartStacked">
+								<br /><br />
+								<h2>Area Chart (stacked)</h2>
+								<br />
+								<script>
+									stackedAreaChart();
+								</script>
+							</div>
+
+							<!--Scatter Plot-->
+							<div id="scatterPlot">
+								<br /><br />
+								<h2>Scatter Plot</h2>
+								<br />
+								<script>
+									scatterPlot();
+								</script>
+							</div>
+
+							<!--Pie Chart-->
+							<div id="pieChart">
+								<br /><br />
+								<h2>Pie Chart</h2>
+								<br />
+								<script>
+									pieChart();
+								</script>
+							</div>
+
+							<!--Donut chart-->
+							<div id="donutChart">
+								<br /><br />
+								<h2>Donut Chart</h2>
+								<br />
+								<script>
+									donutChart();
+								</script>
+							</div>
 						</div>
 					</div>
+
 					<div
 						id="accordion-dropdown"
 						class="tab-pane col mb-4 p-3"
