@@ -5,27 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Import d3.js -->
 		<script src="https://d3js.org/d3.v7.min.js" charset="UTF-8"></script>
-		<!-- Import bootstrap.css -->
+		<!-- Import bootstrap.css / bootstrap.js -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Link CSS -->
 		<link rel="stylesheet" href="main.css" />
+		<!-- Link JS -->
+		<script src="script.js"></script>
 	</head>
 
 	<body>
 		<div class="container">
 			<!-- Header -->
 			<div class="row pt-5 pb-5">
-				<div class="col-lg-3 m-auto text-center" id="logo">Logo</div>
+				<img src="img/logo.png" alt="Logo" class="img" />
 				<div class="col-lg-9" id="page-title">
 					<h1>Group 11 Project 1 Pattern Library</h1>
 				</div>
 			</div>
 
-			<!-- Main -->
+			<!-- Main Content -->
 			<div class="row pt-5 pb-5">
 				<div class="col-lg-3">
 					<!-- Menu -->
@@ -164,8 +168,38 @@
 						aria-labelledby="color-tab"
 						tabindex="0"
 					>
-						<h3>Color</h3>
+						<div id="color-page">
+							<h3>Color</h3>
+							<div class="theme dark">
+								<h2>Dark Theme Palette #1C1C1C</h2>
+								<div class="color-box" style="background-color: #ffbd59">#FFBD59</div>
+								<div class="color-box" style="background-color: #ffffff">#FFFFFF</div>
+								<div class="color-box accent" style="background-color: #ff6f20">#FF6F20</div>
+								<div class="color-box highlight" style="background-color: #ff9a00">#FF9A00</div>
+								<h3>Bar Graph Colors</h3>
+								<div class="color-box" style="background-color: #3b5998">#3B5998</div>
+								<div class="color-box" style="background-color: #009888">#009688</div>
+								<div class="color-box" style="background-color: #dc143c">#DC143C</div>
+								<div class="color-box" style="background-color: #4caf50">#4CAF50</div>
+								<div class="color-box" style="background-color: #708090">#708090</div>
+							</div>
+
+							<div class="theme light">
+								<h2>Light Theme Palette #F4F4F4</h2>
+								<div class="color-box" style="background-color: #ffbd59">#FFBD59</div>
+								<div class="color-box" style="background-color: #333333">#333333</div>
+								<div class="color-box accent" style="background-color: #ff6f20">#FF6F20</div>
+								<div class="color-box highlight" style="background-color: #ff9a00">#FF9A00</div>
+								<h3>Bar Graph Colors</h3>
+								<div class="color-box" style="background-color: #3b5998">#3B5998</div>
+								<div class="color-box" style="background-color: #009688">#009688</div>
+								<div class="color-box" style="background-color: #dc143c">#DC143C</div>
+								<div class="color-box" style="background-color: #4caf50">#4CAF50</div>
+								<div class="color-box" style="background-color: #708090">#708090</div>
+							</div>
+						</div>
 					</div>
+
 					<div
 						id="page-layouts"
 						class="tab-pane col mb-4 p-3"
@@ -265,6 +299,5 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
