@@ -14,7 +14,7 @@
 		/>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 		<!-- Link CSS -->
-		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="style.css" />
 		<!-- Link JS -->
 		<script src="script.js"></script>
 	</head>
@@ -208,6 +208,136 @@
 						tabindex="0"
 					>
 						<h3>Page Layouts</h3>
+						<h1>Grid System</h1>
+
+						<h2>Grid layout</h2>
+
+						<!-- Size 1 of 1 -->
+						<h3>1 of 1</h3>
+						<div class="d-flex flex-md-row flex-column outer-border justify-content-around">
+							<div class="inner-border">
+								<input type="text" placeholder="1/1 (Type here...)" class="form-control" />
+							</div>
+						</div>
+
+						<!-- Size 1 of 2 -->
+						<h3>1 of 2</h3>
+						<div class="d-flex flex-sm-row flex-column outer-border justify-content-around">
+							<div class="inner-border">
+								<input type="text" placeholder="1/2 (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border">
+								<input type="text" placeholder="1/2 (Type here...)" class="form-control" />
+							</div>
+						</div>
+
+						<!-- Size 1 of 3 -->
+						<h3>1 of 3</h3>
+						<div class="d-flex flex-md-row flex-column outer-border justify-content-around">
+							<div class="inner-border">
+								<input type="text" placeholder="1/3 (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border">
+								<input type="text" placeholder="1/3 (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border">
+								<input type="text" placeholder="1/3 (Type here...)" class="form-control" />
+							</div>
+						</div>
+
+						<!-- Size 1 of 4 -->
+						<h3>1 of 4</h3>
+						<div class="d-flex flex-md-row flex-column outer-border justify-content-around">
+							<div class="inner-border">
+								<input type="text" placeholder="1/4 (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border">
+								<input type="text" placeholder="1/4 (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border">
+								<input type="text" placeholder="1/4 (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border">
+								<input type="text" placeholder="1/4 (Type here...)" class="form-control" />
+							</div>
+						</div>
+
+						<br />
+
+						<!-- Flexible grid layout -->
+						<h2>Flexible Grid layout</h2>
+
+						<!-- Example with 2 boxes -->
+						<div class="d-flex flex-row outer-border justify-content-around">
+							<div class="inner-border w-75">
+								<input type="text" placeholder="75% (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border w-25">
+								<input type="text" placeholder="25% (Type here...)" class="form-control" />
+							</div>
+						</div>
+
+						<!-- Example with 3 boxes -->
+						<div class="d-flex flex-row outer-border justify-content-around">
+							<div class="inner-border w-25">
+								<input type="text" placeholder="25% (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border w-25">
+								<input type="text" placeholder="25% (Type here...)" class="form-control" />
+							</div>
+							<div class="inner-border w-50">
+								<input type="text" placeholder="50% (Type here...)" class="form-control" />
+							</div>
+						</div>
+
+						<br />
+
+						<!-- Grid layout on mobile phones -->
+						<h2>Responsive Grid Layout for Mobile Devices</h2>
+
+						<!-- Example with 2 boxes -->
+						<div class="d-flex flex-column outer-border justify-content-around">
+							<div class="inner-border">
+								<input type="text" placeholder="Type here..." class="form-control" />
+							</div>
+							<div class="inner-border">
+								<input type="text" placeholder="Type here..." class="form-control" />
+							</div>
+						</div>
+						<br />
+						<table class="table table-box">
+							<thead>
+								<th colspan="4" style="text-align: center">Break points</th>
+							</thead>
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Device representation</th>
+									<th scope="col">Responsive utility classes</th>
+									<th scope="col">Dimensions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Small</td>
+									<td>sm</td>
+									<td>&ge; 576px</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Medium</td>
+									<td>md</td>
+									<td>&ge; 768px</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Large</td>
+									<td>lg</td>
+									<td>&ge; 992px</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					<div
 						id="typography"
