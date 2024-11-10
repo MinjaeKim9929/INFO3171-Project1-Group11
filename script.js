@@ -193,6 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
+	// Dropdown
 	document.querySelectorAll('.dropdown-header').forEach((header) => {
 		header.addEventListener('click', () => {
 			// Toggle only the clicked dropdown
@@ -201,4 +202,80 @@ document.addEventListener('DOMContentLoaded', () => {
 			content.classList.toggle('active');
 		});
 	});
+
+	// Modal
+	const modals = document.querySelectorAll('.modal-container');
+	modals.forEach((modal) => {
+		modal.addEventListener('click', (e) => {
+			if (e.target === modal) {
+				modal.classList.remove('active');
+				document.body.style.overflow = 'auto';
+			}
+		});
+	});
+
+	// Toast
+	window.showToast = showToast;
+	window.removeToast = removeToast;
 });
+
+// Modal Functions
+function openModal(modalId) {
+	document.getElementById(modalId).classList.add('active');
+	document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalId) {
+	document.getElementById(modalId).classList.remove('active');
+	// Re-enable scrolling
+	document.body.style.overflow = 'auto';
+}
+
+// Toast Functions
+function createToastHTML(type, message) {
+	const icons = {
+		success: '✓',
+		error: '✕',
+		warning: '⚠',
+		info: 'ℹ',
+	};
+
+	return `
+			<div class="toast-content">
+					<span class="toast-icon">${icons[type]}</span>
+					<p class="toast-message">${message}</p>
+			</div>
+			<button class="toast-close">&times;</button>
+	`;
+}
+
+function showToast(theme, type, message) {
+	document.getElementById('lightToastContainer').style.display = 'none';
+	document.getElementById('darkToastContainer').style.display = 'none';
+
+	const container = document.getElementById(`${theme}ToastContainer`);
+	container.style.display = 'flex';
+
+	const toast = document.createElement('div');
+	toast.className = `toast toast-${type}`;
+	toast.innerHTML = createToastHTML(type, message);
+
+	// Add click handlers
+	toast.querySelector('.toast-close').addEventListener('click', (e) => {
+		e.stopPropagation();
+		removeToast(toast);
+	});
+	toast.addEventListener('click', () => removeToast(toast));
+
+	container.appendChild(toast);
+
+	// Auto remove after 5 seconds
+	setTimeout(() => removeToast(toast), 5000);
+}
+
+function removeToast(toast) {
+	if (!toast.classList.contains('hiding')) {
+		toast.classList.add('hiding');
+		setTimeout(() => toast.remove(), 300); // Match animation duration
+	}
+}

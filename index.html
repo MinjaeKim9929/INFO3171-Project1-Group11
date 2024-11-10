@@ -124,12 +124,12 @@
 							<a
 								class="nav-link"
 								data-bs-toggle="tab"
-								data-bs-target="#4"
+								data-bs-target="#table"
 								role="tab"
 								aria-controls="4"
 								aria-selected="false"
 								href="#4"
-								>4</a
+								>Tables</a
 							>
 						</li>
 						<li class="nav-item" role="presentation">
@@ -746,6 +746,56 @@
 					</div>
 					<div id="buttons" class="tab-pane col mb-4 p-3" role="tabpanel" aria-labelledby="buttons-tab" tabindex="0">
 						<h3>Buttons</h3>
+						<!-- Light Theme Buttons -->
+						<div class="light-theme">
+							<div class="text-information">
+								<h4>Light Theme Buttons</h4>
+							</div>
+							<div class="visual-information">
+								<div class="button-group">
+									<button class="btn btn-primary">Primary Button</button>
+									<button class="btn btn-secondary">Secondary Button</button>
+									<button class="btn btn-success">Success Button</button>
+									<button class="btn btn-danger">Danger Button</button>
+									<button class="btn btn-warning">Warning Button</button>
+								</div>
+								<!-- Disabled state -->
+								<div class="button-group">
+									<h5>Disabled Buttons</h5>
+									<button class="btn btn-primary" disabled>Primary</button>
+									<button class="btn btn-secondary" disabled>Secondary</button>
+									<button class="btn btn-success" disabled>Success</button>
+									<button class="btn btn-danger" disabled>Danger</button>
+									<button class="btn btn-warning" disabled>Warning</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Dark Theme Buttons -->
+						<div class="dark-theme">
+							<div class="text-information">
+								<h4>Dark Theme Buttons</h4>
+							</div>
+							<div class="visual-information">
+								<div class="button-group">
+									<button class="btn btn-primary">Primary Button</button>
+									<button class="btn btn-secondary">Secondary Button</button>
+									<button class="btn btn-success">Success Button</button>
+									<button class="btn btn-danger">Danger Button</button>
+									<button class="btn btn-warning">Warning Button</button>
+								</div>
+
+								<!-- Disabled state -->
+								<div class="button-group">
+									<h5>Disabled Buttons</h5>
+									<button class="btn btn-primary" disabled>Primary</button>
+									<button class="btn btn-secondary" disabled>Secondary</button>
+									<button class="btn btn-success" disabled>Success</button>
+									<button class="btn btn-danger" disabled>Danger</button>
+									<button class="btn btn-warning" disabled>Warning</button>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div
 						id="checkboxes-radios"
@@ -755,19 +805,297 @@
 						tabindex="0"
 					>
 						<h3>Checkboxes & Radio Buttons</h3>
+
+						<!-- Light Theme -->
+						<div class="light-theme">
+							<h4>Light Theme</h4>
+							<div class="visual-information">
+								<!-- Checkboxes -->
+								<div class="input-group">
+									<h5>Checkboxes</h5>
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="check1" />
+										<label class="form-check-label" for="check1">Default checkbox</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="check2" checked />
+										<label class="form-check-label" for="check2">Checked checkbox</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="check3" disabled />
+										<label class="form-check-label" for="check3">Disabled checkbox</label>
+									</div>
+								</div>
+
+								<!-- Radio Buttons -->
+								<div class="input-group">
+									<h5>Radio Buttons</h5>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" name="radioLight" id="radio1" />
+										<label class="form-check-label" for="radio1">Default radio</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" name="radioLight" id="radio2" checked />
+										<label class="form-check-label" for="radio2">Selected radio</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" name="radioLight" id="radio3" disabled />
+										<label class="form-check-label" for="radio3">Disabled radio</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Dark Theme -->
+						<div class="dark-theme">
+							<div class="text-information">
+								<h4>Dark Theme</h4>
+							</div>
+							<div class="visual-information">
+								<!-- Checkboxes -->
+								<div class="input-group">
+									<h5>Checkboxes</h5>
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="darkCheck1" />
+										<label class="form-check-label" for="darkCheck1">Default checkbox</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="darkCheck2" checked />
+										<label class="form-check-label" for="darkCheck2">Checked checkbox</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="darkCheck3" disabled />
+										<label class="form-check-label" for="darkCheck3">Disabled checkbox</label>
+									</div>
+								</div>
+
+								<!-- Radio Buttons -->
+								<div class="input-group">
+									<h5>Radio Buttons</h5>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" name="radioDark" id="darkRadio1" />
+										<label class="form-check-label" for="darkRadio1">Default radio</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" name="radioDark" id="darkRadio2" checked />
+										<label class="form-check-label" for="darkRadio2">Selected radio</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" name="radioDark" id="darkRadio3" disabled />
+										<label class="form-check-label" for="darkRadio3">Disabled radio</label>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div id="4" class="tab-pane col mb-4 p-3" role="tabpanel" aria-labelledby="4-tab" tabindex="0">
-						<h3>4</h3>
+					<div id="table" class="tab-pane col mb-4 p-3" role="tabpanel" aria-labelledby="table-tab" tabindex="0">
+						<h3>Tables</h3>
+
+						<!-- Light Theme Table -->
+						<div class="light-theme">
+							<div class="text-information">
+								<h4>Light Theme Table</h4>
+							</div>
+							<div class="visual-information">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">Name</th>
+												<th scope="col">Position</th>
+												<th scope="col">Department</th>
+												<th scope="col">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">1</th>
+												<td>John Doe</td>
+												<td>Developer</td>
+												<td>IT</td>
+												<td><span class="status-badge success">Active</span></td>
+											</tr>
+											<tr>
+												<th scope="row">2</th>
+												<td>Jane Smith</td>
+												<td>Designer</td>
+												<td>UI/UX</td>
+												<td><span class="status-badge warning">Pending</span></td>
+											</tr>
+											<tr>
+												<th scope="row">3</th>
+												<td>Bob Johnson</td>
+												<td>Manager</td>
+												<td>Sales</td>
+												<td><span class="status-badge error">Inactive</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<!-- Dark Theme Table -->
+						<div class="dark-theme">
+							<div class="text-information">
+								<h4>Dark Theme Table</h4>
+							</div>
+							<div class="visual-information">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">Name</th>
+												<th scope="col">Position</th>
+												<th scope="col">Department</th>
+												<th scope="col">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">1</th>
+												<td>John Doe</td>
+												<td>Developer</td>
+												<td>IT</td>
+												<td><span class="status-badge success">Active</span></td>
+											</tr>
+											<tr>
+												<th scope="row">2</th>
+												<td>Jane Smith</td>
+												<td>Designer</td>
+												<td>UI/UX</td>
+												<td><span class="status-badge warning">Pending</span></td>
+											</tr>
+											<tr>
+												<th scope="row">3</th>
+												<td>Bob Johnson</td>
+												<td>Manager</td>
+												<td>Sales</td>
+												<td><span class="status-badge error">Inactive</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div id="modal" class="tab-pane col mb-4 p-3" role="tabpanel" aria-labelledby="modal-tab" tabindex="0">
 						<h3>Modal</h3>
+						<!-- Light Theme -->
+						<div class="light-theme">
+							<div class="text-information">
+								<h4>Light Theme Modal</h4>
+							</div>
+							<div class="visual-information">
+								<div class="button-group">
+									<button class="btn btn-primary" onclick="openModal('lightModal')">Open Light Modal</button>
+								</div>
+								<div id="lightModal" class="modal-container">
+									<div class="modal-box">
+										<div class="modal-header">
+											<h5>Light Theme Modal</h5>
+											<button class="modal-close" onclick="closeModal('lightModal')">&times;</button>
+										</div>
+										<div class="modal-content">
+											<p>
+												This is a light theme modal example using the Montserrat font family. Modals are useful for
+												displaying important information or gathering user input without leaving the current page.
+											</p>
+										</div>
+										<div class="modal-footer mt-4">
+											<button class="btn btn-secondary" onclick="closeModal('lightModal')">Close</button>
+											<button class="btn btn-primary">Save changes</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Dark Theme Modal -->
+						<div class="dark-theme">
+							<div class="text-information">
+								<h4>Dark Theme Modal</h4>
+							</div>
+							<div class="visual-information">
+								<div class="button-group">
+									<button class="btn btn-primary" onclick="openModal('darkModal')">Open Dark Modal</button>
+								</div>
+								<div id="darkModal" class="modal-container">
+									<div class="modal-box">
+										<div class="modal-header">
+											<h5>Dark Theme Modal</h5>
+											<button class="modal-close" onclick="closeModal('darkModal')">&times;</button>
+										</div>
+										<div class="modal-content">
+											<p>
+												This is a dark theme modal example using the Montserrat font family. Modals are useful for
+												displaying important information or gathering user input without leaving the current page.
+											</p>
+										</div>
+										<div class="modal-footer mt-4">
+											<button class="btn btn-secondary" onclick="closeModal('darkModal')">Close</button>
+											<button class="btn btn-primary">Save changes</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div id="toast" class="tab-pane col mb-4 p-3" role="tabpanel" aria-labelledby="toast-tab" tabindex="0">
-						<h3>Toast</h3>
+						<h3>Toast Notifications</h3>
+
+						<!-- Light Theme Toasts -->
+						<div class="light-theme">
+							<div class="text-information">
+								<h4>Light Theme Toasts</h4>
+							</div>
+							<div class="visual-information">
+								<div class="button-group">
+									<button class="btn btn-success" onclick="showToast('light', 'success', 'Success message example!')">
+										Show Success Toast
+									</button>
+									<button class="btn btn-danger" onclick="showToast('light', 'error', 'Error message example!')">
+										Show Error Toast
+									</button>
+									<button class="btn btn-warning" onclick="showToast('light', 'warning', 'Warning message example!')">
+										Show Warning Toast
+									</button>
+									<button class="btn btn-primary" onclick="showToast('light', 'info', 'Information message example!')">
+										Show Info Toast
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Dark Theme Toasts -->
+						<div class="dark-theme">
+							<div class="text-information">
+								<h4>Dark Theme Toasts</h4>
+							</div>
+							<div class="visual-information">
+								<div class="button-group">
+									<button class="btn btn-success" onclick="showToast('dark', 'success', 'Success message example!')">
+										Show Success Toast
+									</button>
+									<button class="btn btn-danger" onclick="showToast('dark', 'error', 'Error message example!')">
+										Show Error Toast
+									</button>
+									<button class="btn btn-warning" onclick="showToast('dark', 'warning', 'Warning message example!')">
+										Show Warning Toast
+									</button>
+									<button class="btn btn-primary" onclick="showToast('dark', 'info', 'Information message example!')">
+										Show Info Toast
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div id="lightToastContainer" class="toast-container light-theme"></div>
+		<div id="darkToastContainer" class="toast-container dark-theme"></div>
 		<script src="script.js"></script>
 	</body>
 </html>
