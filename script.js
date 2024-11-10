@@ -169,3 +169,36 @@ const donutChart = () => {
 };
 
 donutChart();
+
+/* UI Components */
+
+document.addEventListener('DOMContentLoaded', () => {
+	// Accordion
+	const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+	accordionHeaders.forEach((header) => {
+		header.addEventListener('click', () => {
+			// First, close all other accordion items
+			accordionHeaders.forEach((otherHeader) => {
+				if (otherHeader !== header) {
+					otherHeader.classList.remove('active');
+					otherHeader.nextElementSibling.classList.remove('active');
+				}
+			});
+
+			// Then toggle the clicked accordion item
+			header.classList.toggle('active');
+			const content = header.nextElementSibling;
+			content.classList.toggle('active');
+		});
+	});
+
+	document.querySelectorAll('.dropdown-header').forEach((header) => {
+		header.addEventListener('click', () => {
+			// Toggle only the clicked dropdown
+			header.classList.toggle('active');
+			const content = header.nextElementSibling;
+			content.classList.toggle('active');
+		});
+	});
+});
